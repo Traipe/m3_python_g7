@@ -10,29 +10,32 @@ r (radio ): Corresponde al radio del planeta en [m].
 Se solicita crear un script escape.py que permita calcular la velocidad de escape
 ingresando como datos de entradas el radio r y la constante g. Los datos de entrada
 deben ingresarse de manera interactiva utilizando la función input().
+"""
+#import math solo el necesario a utilizar, en este caso raíz cuadrada
+from math import sqrt
 
-ASÍ SE HIZO EN CLASES
-paso 1
-capturar y almacenar datos ingresados por el usuario (por default input() lo almacena como string)
+#ASÍ SE HIZO EN CLASES
+#paso 1
+#capturar y almacenar datos ingresados por el usuario (por default input() lo almacena como string)
 radio = input("ingrese el radio en km")
 #6371 -> "6371"
-paso 2
+#paso 2
 #transformar string a numero
-radio = float (radio) -> la funcion float(), transforma un string a float
-radio = float("6371") -> radio = 6371 -> como num
-paso 3 
+radio = float (radio) #-> la funcion float(), transforma un string a float
+radio = float("6371") #-> radio = 6371 -> como num
+#paso 3 
 #transformar kilometros a metros (multiplicar por mil)
 radio = radio * 1000 #radio = 6371 * 1000 -> radio = 6371000
 
 #paso 1 para g 
-constante_gravitacional = input("ingrese la constante gravitacional:")
+constante_gravitacional = float(input("ingrese la constante gravitacional:"))
 #9.8 -> "9.8"
 #paso 2 para g 
 #transformar string a numero float(constante_gravitacional)
 #constante_gravitacional = float("9.8") -> constante_gravitacional = 9.8
 
 #calculo formula 𝑉𝑒 = √2𝑔𝑟
-multiplicación = 2 * constante_gravitacional * radio
+multiplicacion = 2 * constante_gravitacional * radio
 
 velocidad_escape = sqrt(multiplicacion)
 
@@ -41,7 +44,7 @@ print(f"La velocidad de Escape es {round(velocidad_escape,1)} [m/s]")
 
 
 """
-
+Esto es lo qe hice yo
 #import math solo el necesario a utilizar, en este caso raíz cuadrada
 from math import sqrt
 
@@ -63,3 +66,4 @@ ve = sqrt(2 * r * g)
 
 #Mostrar la velocidad de escape con texto 
 print(f"La velocidad de Escape es {ve} [m/s]")
+"""

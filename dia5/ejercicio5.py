@@ -63,3 +63,13 @@ V F = V
 F V= V
 F F= F *
 """
+
+#soy estudiante y ingreso a clases todos los dias
+# True and False -> False (porqe tienen que ser ambas para ser True)
+
+#me gusta comer fruta o me gusta comer verduras
+# True or True => True
+# False or False => False
+
+#ser o no ser
+# True or False => True

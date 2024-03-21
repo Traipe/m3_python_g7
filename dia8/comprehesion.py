@@ -23,6 +23,7 @@ print([2*i + 2 for i in range(n)])
 
 print("")
 
+#ESTA ES LA SEGUNDA FORMA
 ##[expresión1 if condición1 else expresión2 for variable in iterable]
 valores = [0,4,5,6,7,8,9]
 divisibles = []

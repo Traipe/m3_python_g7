@@ -57,3 +57,9 @@ print(lista_int)
 lst_str = [elemento for elemento in lista if type(elemento) is str ]
 print(len(lst_str))
 print(lst_str)
+
+##DICCIONARIO Comprehesion, se guarda con llave ({})
+claves = ['nombre','apellido','edad','altura']
+valores = ['Jimena','Traipe', 33, 1.59]
+diccionario2 = {k:v for k,v in zip(claves, valores)}#almacenando dentro de una variable el comprehesion. 
+print(diccionario2)

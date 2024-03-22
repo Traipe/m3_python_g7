@@ -42,4 +42,38 @@ a
 t
 o
 La contraseña fue forzada en 43 intentos
+
+////
+Ingresa la contraseña:
+abcdefghijklmnopqrstuvwxyz
+s
+s
+i
+e
+t
+e
+s
+i
+e
+t
+o
+c
+h
+o
+La contraseña fue forzada en 171 intentos
+
+///
+Ingresa la contraseña:
+abcdefghijklmnopqrstuvwxyz
+m
+a
+w
+i
+z
+a
+n
+t
+u
+La contraseña fue forzada en 128 intentos
+
 """

@@ -31,7 +31,7 @@ umbral_ventas = int(sys.argv[1])
 
 # Filtra los meses mayores al umbral y crea el nuevo diccionario (meses_mayor_a_umbral_ventas)
 #Comprehension
-meses_mayor_a_umbral_ventas = {mes: ventas_mes for mes, ventas_mes in ventas.items() if ventas_mes > umbral_ventas}
+meses_mayor_a_umbral_ventas = {clave: valor for clave, valor in ventas.items() if valor > umbral_ventas}
 
 # Imprime el resultado del nuevo diccionario (meses_mayor_a_umbral_ventas)
 print(meses_mayor_a_umbral_ventas)

@@ -4,33 +4,32 @@ Najla Gatica
 Lolett Llanquinao
 Jimena Traipe
 """
-#Primeros Auxilios
-print("¿Necesita ayuda? responda estas preguntas para ayudarle en su problema\n")
-#usuario ingresa opción
-opcion_usuario = input("¿La persona responde a estímulos? (si/no):\n")
-print(opcion_usuario)
-if  opcion_usuario.lower() == "si":
-    print("Diríjase al hospital más cercano")
-elif opcion_usuario.lower() == "no":
-    print("Verificar que las vías aéreas no estén obstruidas\n")
+
+#Actividad 2 - Primeros Auxilios
+print("¡Bienvenido a la aplicación de primeros auxilios!")
+print("Por favor, responde las siguientes preguntas para obtener ayuda:")
+
+estimulos = input("¿La persona responde a estímulos? (si/no)\n").lower()
+if estimulos == "si":
+    print("Valorar la necesidad de traslado al hospital más cercano")
 else:
-    print("FIN se murió")
+    print("Despejar via aérea")
+    respira = input ("¿La persona respira? (si/no)\n").lower()
 
+    if respira == "si":
+        print("Permitirle posición para respirar")
+    else:
+        print("Administrar 5 ventilaciones y llamar a la ambulancia")
 
-opcion_usuario = input("¿Está respirando? (si/no):\n")
-if opcion_usuario.lower() == "si":
-    print("Darle espacio a la persona para que pueda respirar")
-elif opcion_usuario.lower() == "no":
-    print("Administrar 5 ventilaciones y llamar a la ambulancia")
+        ambulancia = "no" #no ha llegado la ambulancia
+        while ambulancia == "no":
+            signos = input("¿Tiene signos vitales? (si/no)\n").lower()
 
+            if signos == "si":
+                print("Reevaluar signos vitales a la espera de la ambulancia")
+            else:
+                print("Administrar compresiones torácicas hasta que llegue la ambulancia")
 
-    opcion_usuario = input("¿Signos de vida? (si/no):\n")
-    if opcion_usuario.lower() == "si":
-        print("Reevaluar signos vitales a la espera de la ambulancia")
-    elif opcion_usuario.lower() == "no":
-        print("Administrar compresiones torácicas hasta que llegue la ambulancia")
+            ambulancia = input("¿Llegó la ambulancia? (si/no)\n").lower()
 
-while True: #aqui va el loop
-    opcion_usuario = input("¿Llegó la ambulancia? (si/no):\n")
-    if opcion_usuario.lower() == "si":
-        print("FIN del programa")
+print("¡Aplicación de primeros auxilios terminada!")
